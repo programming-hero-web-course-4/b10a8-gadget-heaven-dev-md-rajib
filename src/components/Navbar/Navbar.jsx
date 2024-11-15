@@ -22,13 +22,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={` p-2  ${
+      className={` p-2 pb-0   ${
         isHome()
           ? "rounded-t-xl border-t border-l border-r text-white"
           : "text-[#0B0B0B]"
       }`}>
       <div
-        className={`navbar bg-base-100  ${
+        className={`navbar bg-base-100 px-[100px]  ${
           isHome() ? "bg-[#9538E2] rounded-t-xl" : ""
         }`}>
         <div className="navbar-start">
@@ -50,7 +50,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
               <NavLink
                 to="/"
                 className={({ isActive }) => isActive && "underline"}>
