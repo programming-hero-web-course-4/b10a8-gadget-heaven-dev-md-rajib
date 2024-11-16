@@ -1,0 +1,190 @@
+[
+  {
+    "product_id": "LAP001",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://example.com/images/dell-xps13.jpg",
+    "category": "laptops",
+    "price": 999.99,
+    "description": "A compact and powerful ultrabook with stunning display and great performance.",
+    "specification": [
+      "13.3-inch FHD+ Display",
+      "Intel Core i7 Processor",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "LAP002",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://example.com/images/hp-spectre-x360.jpg",
+    "category": "laptops",
+    "price": 1199.99,
+    "description": "A premium 2-in-1 laptop with sleek design and versatile features.",
+    "specification": [
+      "13.5-inch OLED Display",
+      "Intel Core i7 Processor",
+      "16GB RAM",
+      "1TB SSD"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "PHN001",
+    "product_title": "Samsung Galaxy S23",
+    "product_image": "https://example.com/images/galaxy-s23.jpg",
+    "category": "phones",
+    "price": 799.99,
+    "description": "A flagship smartphone with a stunning camera and excellent performance.",
+    "specification": [
+      "6.1-inch AMOLED Display",
+      "Snapdragon 8 Gen 2",
+      "8GB RAM",
+      "128GB Storage"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "PHN002",
+    "product_title": "Google Pixel 7",
+    "product_image": "https://example.com/images/pixel-7.jpg",
+    "category": "phones",
+    "price": 599.99,
+    "description": "A reliable smartphone with excellent photo quality and stock Android experience.",
+    "specification": [
+      "6.3-inch OLED Display",
+      "Google Tensor G2",
+      "8GB RAM",
+      "128GB Storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "ACC001",
+    "product_title": "Logitech MX Master 3",
+    "product_image": "https://example.com/images/mx-master-3.jpg",
+    "category": "accessories",
+    "price": 99.99,
+    "description": "A high-performance ergonomic mouse with customizable buttons and great battery life.",
+    "specification": [
+      "Wireless Connectivity",
+      "4000 DPI Sensor",
+      "USB-C Charging"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "ACC002",
+    "product_title": "Razer BlackWidow V3",
+    "product_image": "https://example.com/images/blackwidow-v3.jpg",
+    "category": "accessories",
+    "price": 129.99,
+    "description": "A mechanical gaming keyboard with RGB lighting and durable switches.",
+    "specification": [
+      "Razer Green Switches",
+      "Per-Key RGB Lighting",
+      "Wrist Rest Included"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "SMW001",
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://example.com/images/apple-watch-series8.jpg",
+    "category": "smart-watches",
+    "price": 399.99,
+    "description": "A premium smartwatch with advanced health tracking and seamless Apple ecosystem integration.",
+    "specification": [
+      "Always-On Retina Display",
+      "Blood Oxygen Sensor",
+      "ECG App"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "SMW002",
+    "product_title": "Samsung Watch 6",
+    "product_image": "https://example.com/images/galaxy-watch-6.jpg",
+    "category": "smart-watches",
+    "price": 349.99,
+    "description": "A stylish smartwatch with fitness tracking and long-lasting battery.",
+    "specification": [
+      "1.4-inch Super AMOLED Display",
+      "Advanced Sleep Tracking",
+      "LTE Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "MAC001",
+    "product_title": "MacBook Pro 14-inch",
+    "product_image": "https://example.com/images/macbook-pro-14.jpg",
+    "category": "macbook",
+    "price": 1999.99,
+    "description": "A powerful MacBook with the M2 Pro chip for professionals and creatives.",
+    "specification": [
+      "14-inch Liquid Retina XDR Display",
+      "M2 Pro Chip",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "MAC002",
+    "product_title": "MacBook Air M2",
+    "product_image": "https://example.com/images/macbook-air-m2.jpg",
+    "category": "macbook",
+    "price": 1199.99,
+    "description": "A lightweight MacBook with the efficient M2 chip for everyday use.",
+    "specification": [
+      "13.6-inch Liquid Retina Display",
+      "M2 Chip",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "IPH001",
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://example.com/images/iphone-14-pro.jpg",
+    "category": "iphone",
+    "price": 999.99,
+    "description": "Apple's latest flagship smartphone with an innovative Dynamic Island and Pro camera system.",
+    "specification": [
+      "6.1-inch Super Retina XDR Display",
+      "A16 Bionic Chip",
+      "48MP Pro Camera",
+      "128GB Storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "IPH002",
+    "product_title": "iPhone 13 Mini",
+    "product_image": "https://example.com/images/iphone-13-mini.jpg",
+    "category": "iphone",
+    "price": 699.99,
+    "description": "A compact iPhone with all the features you love in a smaller form factor.",
+    "specification": [
+      "5.4-inch Super Retina XDR Display",
+      "A15 Bionic Chip",
+      "12MP Dual Camera System",
+      "128GB Storage"
+    ],
+    "availability": true,
+    "rating": 4.7
+  }
+]

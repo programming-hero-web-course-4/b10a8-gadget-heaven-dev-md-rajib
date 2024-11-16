@@ -20,15 +20,17 @@ const Navbar = () => {
     return true;
   };
 
+  console.log(isHome());
+
   return (
     <div
       className={` p-2 pb-0   ${
         isHome()
           ? "rounded-t-xl border-t border-l border-r text-white"
-          : "text-[#0B0B0B]"
+          : "text-[#0B0B0B] bg-white"
       }`}>
       <div
-        className={`navbar bg-base-100 px-[100px]  ${
+        className={`navbar  px-[100px]  ${
           isHome() ? "bg-[#9538E2] rounded-t-xl" : ""
         }`}>
         <div className="navbar-start">
