@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { getAllData, getFilteredData } from "../../utlitlies/dataRetrieve";
+import Blank from "../Blank/Blank";
 import Book from "../Book/Book";
 
 const Books = ({ products, updateProducts }) => {
@@ -89,9 +90,15 @@ const Books = ({ products, updateProducts }) => {
         </div>
 
         <div className="col-span-3 grid grid-cols-3 gap-6 auto-rows-max">
-          {products.map((product) => {
-            return <Book product={product}></Book>;
-          })}
+          {products.length ? (
+            products.map((product) => {
+              return <Book product={product}></Book>;
+            })
+          ) : (
+            <div className="flex justify-center col-span-3">
+              <Blank></Blank>
+            </div>
+          )}
         </div>
       </div>
     </div>

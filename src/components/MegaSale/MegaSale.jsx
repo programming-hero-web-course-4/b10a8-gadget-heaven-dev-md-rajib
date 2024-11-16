@@ -14,7 +14,7 @@ const MegaSale = () => {
   } = useContext(DataContext);
 
   return (
-    <div>
+    <div className="w-[90%] mx-auto">
       <div className="bg-[#9538E2] px-2 pb-6 pt-8">
         <h1 className="text-3xl text-white font-bold text-center">
           Mega Sale{" "}

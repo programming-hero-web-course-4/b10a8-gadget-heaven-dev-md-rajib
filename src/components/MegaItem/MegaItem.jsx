@@ -24,9 +24,13 @@ const MegaItem = ({ product }) => {
         </h2>
         <div className="flex gap-4">
           <p className="text-xl text-[#09080F99] text-red-600 font-medium line-through">
-            Price: {prev_price}k
+            Price:
+            <br /> {prev_price}k
           </p>
-          <p className="text-green-600 font-medium text-xl ">Price: {price}k</p>
+          <p className="text-green-600 font-medium text-xl ">
+            Price:
+            <br /> {price}k
+          </p>
         </div>
         <div className="card-actions justify-start ">
           <Link

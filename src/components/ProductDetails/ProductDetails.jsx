@@ -60,7 +60,7 @@ const ProductDetails = () => {
     }
   };
   return (
-    <div className="bg-[#9538E2]">
+    <div className="bg-[#9538E2] w-[90%] mx-auto">
       <h1 className="text-white text-3xl font-bold text-center pt-5">
         Product Details
       </h1>

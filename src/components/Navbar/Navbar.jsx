@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import saleImage from "../../assets/sale.png";
+import saleAnimate from "../../assets/saleAni.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
@@ -31,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={` p-2 pb-0   ${
+      className={` p-2  pb-0 w-[90%] mx-auto   ${
         isHome()
           ? "rounded-t-xl border-t border-l border-r text-white"
           : "text-[#0B0B0B] bg-white"
@@ -104,7 +105,7 @@ const Navbar = () => {
 
             <NavLink
               className={({ isActive }) =>
-                isActive ? "bg-slate-300 relative" : "relative"
+                isActive ? " relative " : "relative"
               }
               to="/mega-sale">
               <div className="w-[75px] absolute top-[-30px] left-[-5px] -rotate-12 hover:bg-yellow-200 rounded-full">

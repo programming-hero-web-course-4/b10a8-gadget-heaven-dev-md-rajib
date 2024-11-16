@@ -18,7 +18,7 @@ import { DataContext } from "../../App";
 const Statistics = () => {
   const { products } = useContext(DataContext);
   return (
-    <div>
+    <div className="w-[90%] mx-auto">
       <div className="bg-[#9538E2] py-8">
         <Helmet>
           <meta charSet="utf-8" />

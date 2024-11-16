@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { DataContext } from "../../App";
+import Blank from "../Blank/Blank";
 import WishlistProduct from "../WishlistProduct/WishlistProduct";
 
 const WishListProducts = () => {
@@ -18,9 +19,13 @@ const WishListProducts = () => {
       </h1>
 
       <div className="flex flex-col gap-4 pt-8">
-        {wishList.map((current) => {
-          return <WishlistProduct current={current}></WishlistProduct>;
-        })}
+        {wishList.length ? (
+          wishList.map((current) => {
+            return <WishlistProduct current={current}></WishlistProduct>;
+          })
+        ) : (
+          <Blank></Blank>
+        )}
       </div>
     </div>
   );

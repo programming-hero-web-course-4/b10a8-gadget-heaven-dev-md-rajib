@@ -13,7 +13,7 @@ import Books from "../Books/Books";
 const Home = ({}) => {
   const { products, updateProducts } = useContext(DataContext);
   return (
-    <div>
+    <div className="w-[90%] mx-auto">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Gadget Heaven | Home</title>

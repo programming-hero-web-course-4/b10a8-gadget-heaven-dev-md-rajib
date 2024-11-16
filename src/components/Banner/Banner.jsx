@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import bannerImage from "../../assets/banner.jpg";
 const Banner = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/dashboard");
+  };
   return (
     <div className="px-2 border-l border-r border-b pb-2 rounded-b-xl">
       <div className="bg-[#9538E2] pt-3 rounded-b-xl">
@@ -15,7 +20,7 @@ const Banner = () => {
             it all!
           </p>
 
-          <div className="flex justify-center">
+          <div onClick={handleClick} className="flex justify-center">
             <button className="box-border mt-8 rounded-3xl bg-white w-[168px] h-[56px] text-[#9538E2] text-[20px] font-bold mb-8">
               Shop Now
             </button>

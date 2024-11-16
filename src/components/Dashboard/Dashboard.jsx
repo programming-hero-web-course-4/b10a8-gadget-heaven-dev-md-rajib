@@ -7,7 +7,7 @@ import WishListProducts from "../WishListProducts/WishListProducts";
 const Dashboard = () => {
   const [cartSelected, updateSelected] = useState(1);
   return (
-    <div>
+    <div className="w-[90%] mx-auto">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Gadget Heaven | Dashboard</title>

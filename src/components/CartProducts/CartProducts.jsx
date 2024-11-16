@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { DataContext } from "../../App";
 import sortLogo from "../../assets/sort.png";
 import { saveCartData } from "../../utlitlies/localStorageDB";
+import Blank from "../Blank/Blank";
 import CartProduct from "../CartProduct/CartProduct";
 import Modal from "../Modal/Modal";
 const CartProducts = () => {
@@ -25,7 +26,11 @@ const CartProducts = () => {
   const [modalData, updateModalData] = useState(0);
 
   const handlePurchase = () => {
-    if (cartObjectsState.length) {
+    if (
+      cartObjectsState.length &&
+      cartObjectsState.reduce((total, cur) => total + cur.price, 0).toFixed(2) >
+        0
+    ) {
       updateModalData(
         cartObjectsState.reduce((total, cur) => total + cur.price, 0).toFixed(2)
       );
@@ -33,7 +38,7 @@ const CartProducts = () => {
       updateCart([]);
       saveCartData([]);
     } else {
-      toast.error("No product in the cart.");
+      toast.error("Not enough product in the cart.");
     }
   };
 
@@ -71,17 +76,22 @@ const CartProducts = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col gap-4 pt-8">
-        {cartObjectsState.map((data) => {
-          return (
-            <CartProduct
-              updateObjectList={updateObjectList}
-              cartObjectsState={cartObjectsState}
-              data={data}
-              className></CartProduct>
-          );
-        })}
-      </div>
+
+      {cartObjectsState.length ? (
+        <div className="flex flex-col gap-4 pt-8">
+          {cartObjectsState.map((data) => {
+            return (
+              <CartProduct
+                updateObjectList={updateObjectList}
+                cartObjectsState={cartObjectsState}
+                data={data}
+                className></CartProduct>
+            );
+          })}
+        </div>
+      ) : (
+        <Blank></Blank>
+      )}
     </div>
   );
 };
