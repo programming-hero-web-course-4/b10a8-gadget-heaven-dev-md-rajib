@@ -4,17 +4,23 @@ import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { useContext } from "react";
+import { DataContext } from "../../App";
 
 const Navbar = () => {
   const location = useLocation();
   const pathName = location.pathname;
   const arr = pathName.split("/");
-  console.log(pathName);
-  console.log(arr);
+
+  const { wishList, cart } = useContext(DataContext);
   //   console.log(location);
 
   const isHome = () => {
-    if (arr[1] === "statistics" || arr[1] === "dashboard") {
+    if (
+      arr[1] === "statistics" ||
+      arr[1] === "dashboard" ||
+      arr[1] === "product-details"
+    ) {
       return false;
     }
     return true;
@@ -99,11 +105,18 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="flex gap-4">
             {/* cart */}
-            <div className="bg-white text-black rounded-full border border-gray-200 w-10 h-10 flex items-center justify-center">
+            <div className="bg-white text-black rounded-full border border-gray-200 w-10 h-10 flex items-center justify-center relative">
               <FontAwesomeIcon icon={faCartShopping} />
+              <div className="text-red-600 border absolute top-[-12px] right-[-12px] bg-white rounded-lg w-6 flex justify-center">
+                {cart.length}
+              </div>
             </div>
-            <div className="bg-white text-black rounded-full border border-gray-200 w-10 h-10 flex items-center justify-center">
+            <div className="bg-white text-black rounded-full border border-gray-200 w-10 h-10 flex items-center justify-center relative">
               <FontAwesomeIcon icon={faHeart} />
+
+              <div className="text-red-600 border absolute top-[-12px] right-[-12px] bg-white rounded-lg w-6 flex justify-center">
+                {wishList.length}
+              </div>
             </div>
           </div>
         </div>

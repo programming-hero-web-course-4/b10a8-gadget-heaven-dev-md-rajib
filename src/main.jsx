@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Statistics from "./components/Statistics/Statistics";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
