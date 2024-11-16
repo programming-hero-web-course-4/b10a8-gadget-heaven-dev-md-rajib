@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
-
+import saleImage from "../../assets/sale.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
@@ -19,7 +19,8 @@ const Navbar = () => {
     if (
       arr[1] === "statistics" ||
       arr[1] === "dashboard" ||
-      arr[1] === "product-details"
+      arr[1] === "product-details" ||
+      arr[1] === "mega-sale"
     ) {
       return false;
     }
@@ -80,7 +81,7 @@ const Navbar = () => {
             Gadget Heaven
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex  items-center">
           <ul
             className={`menu menu-horizontal px-1 flex gap-6 font-medium ${
               isHome() ? "text-white" : "text-[#0B0B0BB3]"
@@ -99,6 +100,16 @@ const Navbar = () => {
               className={({ isActive }) => isActive && "text-[#9538E2]"}
               to="/dashboard">
               Dashboard
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "bg-slate-300 relative" : "relative"
+              }
+              to="/mega-sale">
+              <div className="w-[75px] absolute top-[-30px] left-[-5px] -rotate-12 hover:bg-yellow-200 rounded-full">
+                <img className="w-full h-full " src={saleImage} alt="" />
+              </div>
             </NavLink>
           </ul>
         </div>

@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import doneImage from "../../assets/done.png";
 import { saveCartData } from "../../utlitlies/localStorageDB";
 const Modal = ({ price, updateCart }) => {
+  const navigate = useNavigate();
   const handleClick = () => {
-    document.getElementById("my_modal_1").showModal();
+    //  document.getElementById("my_modal_1").showModal();
+    navigate("/");
   };
   return (
     <dialog id="my_modal_1" className="modal ">

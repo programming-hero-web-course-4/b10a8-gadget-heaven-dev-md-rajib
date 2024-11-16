@@ -41,6 +41,7 @@ const WishlistProduct = ({ current }) => {
       data.push(current);
       saveCartData(data);
       updateCart(data);
+      handleRemove();
       //   toast.success("Successfully added to cart!");
       toast.success("Successfully added to cart!");
     }

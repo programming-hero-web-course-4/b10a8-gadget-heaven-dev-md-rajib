@@ -70,7 +70,7 @@ const ProductDetails = () => {
         level. From smart devices to the coolest accessories, we have it all!
       </p>
 
-      <div className="relative pb-[200px] mt-10">
+      <div className="relative pb-[200px] mt-10 mb-[400px]">
         <div className="w-[70%] left-1/2 -translate-x-1/2 h-fit absolute  mx-auto rounded-[32px] p-4 border bg-white flex gap-8">
           <div className="w-[520px]  ">
             <img

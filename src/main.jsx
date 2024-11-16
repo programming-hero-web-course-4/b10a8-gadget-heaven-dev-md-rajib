@@ -8,6 +8,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Statistics from "./components/Statistics/Statistics";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import { ToastContainer } from "react-toastify";
+import MegaSale from "./components/MegaSale/MegaSale";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,16 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/mega-sale",
+        element: <MegaSale></MegaSale>,
+        children: [
+          {
+            path: "product-details/:product_id",
+            element: <ProductDetails></ProductDetails>,
+          },
+        ],
       },
     ],
   },

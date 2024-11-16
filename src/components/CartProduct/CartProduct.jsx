@@ -1,5 +1,6 @@
 import React from "react";
 import { useContext } from "react";
+import { toast } from "react-toastify";
 import { DataContext } from "../../App";
 import bannerImage from "../../assets/banner.jpg";
 import deleteLogo from "../../assets/delete.png";
@@ -16,6 +17,8 @@ const CartProduct = ({ data, updateObjectList, cartObjectsState }) => {
     updateObjectList(
       cartObjectsState.filter((cur) => cur.product_id !== data.product_id)
     );
+
+    toast.success("Item is removed!");
   };
   return (
     <div className="p-8 flex gap-8 bg-white rounded-2xl items-center relative">
