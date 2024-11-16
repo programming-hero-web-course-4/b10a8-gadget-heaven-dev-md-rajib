@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import { DataContext } from "../../App";
-
+import logoMain from "../../assets/logoMain.svg";
 const Navbar = () => {
   const location = useLocation();
   const pathName = location.pathname;
@@ -78,9 +78,18 @@ const Navbar = () => {
               </NavLink>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl font-bold hover:bg-transparent">
-            Gadget Heaven
-          </a>
+          <div className="flex items-center">
+            <div className=" h-[60px] w-[60px]">
+              <img
+                className=" w-full h-full object-cover"
+                src={logoMain}
+                alt=""
+              />
+            </div>
+            <a className="btn btn-ghost text-xl font-bold hover:bg-transparent">
+              Gadget Heaven
+            </a>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex  items-center">
           <ul

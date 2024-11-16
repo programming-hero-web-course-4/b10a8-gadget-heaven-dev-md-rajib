@@ -165,7 +165,7 @@
     "product_title": "iPhone 14 Pro",
     "product_image": "https://example.com/images/iphone-14-pro.jpg",
     "category": "iphone",
-    "price": 999.99,
+    "price": 933.99,
     "description": "Apple's latest flagship smartphone with an innovative Dynamic Island and Pro camera system.",
     "specification": [
       "6.1-inch Super Retina XDR Display",
@@ -199,7 +199,7 @@
     "product_title": "Apple MacBook Air M2",
     "product_image": "https://example.com/images/macbook-air-m2.jpg",
     "category": "laptops",
-    "price": 1199.99,
+    "price": 1119.99,
     "description": "A lightweight and efficient laptop with Apple's M2 chip for exceptional performance.",
     "specification": [
       "13.6-inch Liquid Retina Display",
@@ -215,7 +215,7 @@
     "product_title": "Lenovo ThinkPad X1 ",
     "product_image": "https://example.com/images/thinkpad-x1-carbon.jpg",
     "category": "laptops",
-    "price": 1399.99,
+    "price": 1345.99,
     "prev_price": 1779.99,
     "description": "A professional-grade ultrabook with exceptional durability and performance.",
     "specification": [

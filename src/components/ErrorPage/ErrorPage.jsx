@@ -11,7 +11,7 @@ const ErrorPage = () => {
   return (
     <div onClick={handleClick} className=" mx-auto">
       <div className="rounded-full h-screen mt-[-8px]">
-        <img className="h-full w-full" src={errorImage} alt="" />
+        <img className="h-full w-full object-cover" src={errorImage} alt="" />
       </div>
     </div>
   );
