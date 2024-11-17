@@ -74,7 +74,16 @@ const ProductDetails = () => {
   if (!product) {
     return (
       <div className="text-center text-white">
-        <p>Loading product details...</p>
+        <p className="text-blue-600 text-center font-bold mt-5">
+          <span className="loading loading-spinner text-primary"></span>
+          <span className="loading loading-spinner text-secondary"></span>
+          <span className="loading loading-spinner text-accent"></span>
+          <span className="loading loading-spinner text-neutral"></span>
+          <span className="loading loading-spinner text-info"></span>
+          <span className="loading loading-spinner text-success"></span>
+          <span className="loading loading-spinner text-warning"></span>
+          <span className="loading loading-spinner text-error"></span>
+        </p>
       </div>
     );
   } else {
