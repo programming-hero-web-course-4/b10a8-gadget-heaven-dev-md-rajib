@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "product-details/:product_id",
+        path: "product/details/:product_id",
         element: <ProductDetails></ProductDetails>,
       },
       {
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         element: <MegaSale></MegaSale>,
         children: [
           {
-            path: "product-details/:product_id",
+            path: "product/details/:product_id",
             element: <ProductDetails></ProductDetails>,
           },
         ],

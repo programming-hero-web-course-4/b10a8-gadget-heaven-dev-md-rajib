@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Helmet } from "react-helmet";
+import {
+  retrieveCartData,
+  retrieveWishListData,
+} from "../../utlitlies/localStorageDB";
 import CartProducts from "../CartProducts/CartProducts";
 import WishListProducts from "../WishListProducts/WishListProducts";
 
 const Dashboard = () => {
   const [cartSelected, updateSelected] = useState(1);
+
+  const [cartDataIds, updateCartDataIds] = useState([]);
+  const [wishlistDataIds, updateWishlistDataIds] = useState([]);
+
+  useEffect(() => {
+    const data = retrieveCartData();
+    updateCartDataIds(data);
+
+    const data2 = retrieveWishListData();
+    updateWishlistDataIds(data2);
+  }, []);
+
   return (
     <div className="w-[90%] mx-auto">
       <Helmet>
@@ -42,9 +58,15 @@ const Dashboard = () => {
       </div>
 
       {cartSelected ? (
-        <CartProducts></CartProducts>
+        <CartProducts
+          updateCartDataIds={updateCartDataIds}
+          cartDataIds={cartDataIds}></CartProducts>
       ) : (
-        <WishListProducts></WishListProducts>
+        <WishListProducts
+          wishlistDataIds={wishlistDataIds}
+          updateWishlistDataIds={updateWishlistDataIds}
+          updateCartDataIds={updateCartDataIds}
+          cartDataIds={cartDataIds}></WishListProducts>
       )}
     </div>
   );

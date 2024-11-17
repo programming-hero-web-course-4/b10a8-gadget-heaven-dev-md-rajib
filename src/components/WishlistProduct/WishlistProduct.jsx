@@ -9,7 +9,13 @@ import {
   saveWishListData,
 } from "../../utlitlies/localStorageDB";
 
-const WishlistProduct = ({ current }) => {
+const WishlistProduct = ({
+  current,
+  cartDataIds,
+  updateCartDataIds,
+  wishlistDataIds,
+  updateWishlistDataIds,
+}) => {
   const {
     products,
     updateProducts,
@@ -20,12 +26,14 @@ const WishlistProduct = ({ current }) => {
   } = useContext(DataContext);
 
   const currentProduct = products.find((cur) => cur.product_id === current);
+  // const currentProduct = current;
 
   const handleRemove = () => {
     console.log("clicked on remove");
 
-    const newData = wishList.filter((cur) => cur !== current);
-    updateWishList(newData);
+    const newData = wishlistDataIds.filter((cur) => cur !== current);
+    // updateWishList(newData);
+    updateWishlistDataIds(newData);
     saveWishListData(newData);
   };
 
@@ -40,6 +48,7 @@ const WishlistProduct = ({ current }) => {
     } else {
       data.push(current);
       saveCartData(data);
+      updateCartDataIds(data);
       updateCart(data);
       handleRemove();
       //   toast.success("Successfully added to cart!");

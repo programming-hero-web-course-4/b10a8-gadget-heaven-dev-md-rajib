@@ -19,7 +19,7 @@ const Book = ({ product }) => {
         <p className="text-xl text-[#09080F99] font-medium">Price: {price}k</p>
         <div className="card-actions justify-start ">
           <Link
-            to={`product-details/${product_id}`}
+            to={`product/details/${product_id}`}
             className="btn btn-outline w-[130px] btn-primary text-[#9538E2] border-[#9538E2] rounded-3xl font-semibold">
             View Details
           </Link>

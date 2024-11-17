@@ -20,10 +20,19 @@ function App() {
   const [cart, updateCart] = useState([]);
 
   useEffect(() => {
+    // getAllData(updateProducts);
+
     getAllData(updateProducts);
+
+    console.log("products from app jsx", products);
+  }, []);
+
+  useEffect(() => {
     const cartData = retrieveCartData();
     updateCart(cartData);
+  }, []);
 
+  useEffect(() => {
     const wishListData = retrieveWishListData();
     updateWishList(wishListData);
   }, []);

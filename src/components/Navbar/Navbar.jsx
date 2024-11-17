@@ -20,15 +20,13 @@ const Navbar = () => {
     if (
       arr[1] === "statistics" ||
       arr[1] === "dashboard" ||
-      arr[1] === "product-details" ||
+      arr[1] === "product" ||
       arr[1] === "mega-sale"
     ) {
       return false;
     }
     return true;
   };
-
-  console.log(isHome());
 
   return (
     <div
@@ -135,16 +133,9 @@ const Navbar = () => {
             {/* cart */}
             <div className="bg-white text-black rounded-full border border-gray-200 w-10 h-10 flex items-center justify-center relative">
               <FontAwesomeIcon icon={faCartShopping} />
-              <div className="text-red-600 border absolute top-[-12px] right-[-12px] bg-white rounded-lg w-6 flex justify-center">
-                {cart.length}
-              </div>
             </div>
             <div className="bg-white text-black rounded-full border border-gray-200 w-10 h-10 flex items-center justify-center relative">
               <FontAwesomeIcon icon={faHeart} />
-
-              <div className="text-red-600 border absolute top-[-12px] right-[-12px] bg-white rounded-lg w-6 flex justify-center">
-                {wishList.length}
-              </div>
             </div>
           </div>
         </div>

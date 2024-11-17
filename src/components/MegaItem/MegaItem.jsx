@@ -7,7 +7,8 @@ const MegaItem = ({ product }) => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(`/product-details/${product_id}`);
+    //console.log("navigating: " + product_id);
+    navigate(`/product/details/${product_id}`);
   };
   return (
     <div className="card card-compact bg-yellow-300 p-5 gap-5">

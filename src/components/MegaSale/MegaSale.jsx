@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Outlet, useNavigate } from "react-router-dom";
 import { DataContext } from "../../App";
+import { getAllData } from "../../utlitlies/dataRetrieve";
 import MegaItem from "../MegaItem/MegaItem";
 
 const MegaSale = () => {
@@ -13,6 +14,10 @@ const MegaSale = () => {
     cart,
     updateCart,
   } = useContext(DataContext);
+
+  useEffect(() => {
+    getAllData(updateProducts);
+  }, []);
 
   return (
     <div className="w-[90%] mx-auto">
@@ -40,7 +45,11 @@ const MegaSale = () => {
         {products
           .filter((cur) => cur.prev_price)
           .map((product) => {
-            return <MegaItem product={product}></MegaItem>;
+            return (
+              <MegaItem
+                key={product.product_id + "megasale"}
+                product={product}></MegaItem>
+            );
           })}
       </div>
     </div>

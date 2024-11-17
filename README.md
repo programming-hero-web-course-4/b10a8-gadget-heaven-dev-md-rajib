@@ -4,9 +4,9 @@
 
 ## Live Links:
 
-### Netlify:
-
 ### Surge:
+
+### Netlify: https://gadgetforyou.netlify.app/
 
 ## Requirements:
 

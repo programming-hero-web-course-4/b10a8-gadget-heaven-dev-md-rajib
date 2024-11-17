@@ -3,6 +3,9 @@ function getAllData(updateProducts) {
     .then((res) => res.json())
     .then((data) => {
       updateProducts(data);
+
+      console.log("data retrieved in the getAlldata", data);
+      // console.log(updateProducts);
     });
 }
 

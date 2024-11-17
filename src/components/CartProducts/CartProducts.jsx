@@ -4,24 +4,31 @@ import { useContext } from "react";
 import { toast } from "react-toastify";
 import { DataContext } from "../../App";
 import sortLogo from "../../assets/sort.png";
-import { saveCartData } from "../../utlitlies/localStorageDB";
+import { retrieveCartData, saveCartData } from "../../utlitlies/localStorageDB";
 import Blank from "../Blank/Blank";
 import CartProduct from "../CartProduct/CartProduct";
 import Modal from "../Modal/Modal";
-const CartProducts = () => {
-  const { products, wishList, updateWishList, cart, updateCart } =
+const CartProducts = ({ cartDataIds, updateCartDataIds }) => {
+  const { products, wishList, updateWishList, updateCart } =
     useContext(DataContext);
 
-  const [cartObjectsState, updateObjectList] = useState(
-    products.filter((cur) => cart.includes(cur.product_id))
-  );
+  const [cartObjectsState, updateObjectList] = useState([]);
+
+  useEffect(() => {
+    const curCart = products.filter((cur) =>
+      cartDataIds.includes(cur.product_id)
+    );
+    updateObjectList(curCart);
+  }, []);
+
+  console.log("Cart ids:", cartDataIds);
 
   useEffect(() => {
     const updatedCartObjects = products.filter((cur) =>
-      cart.includes(cur.product_id)
+      cartDataIds.includes(cur.product_id)
     );
     updateObjectList(updatedCartObjects);
-  }, [products, cart]);
+  }, [products, cartDataIds]);
 
   const [modalData, updateModalData] = useState(0);
 
@@ -35,7 +42,7 @@ const CartProducts = () => {
         cartObjectsState.reduce((total, cur) => total + cur.price, 0).toFixed(2)
       );
       document.getElementById("my_modal_1").showModal();
-      updateCart([]);
+      updateCartDataIds([]);
       saveCartData([]);
     } else {
       toast.error("Not enough product in the cart.");
@@ -82,6 +89,9 @@ const CartProducts = () => {
           {cartObjectsState.map((data) => {
             return (
               <CartProduct
+                key={data.product_id + "cartProduct"}
+                cartDataIds={cartDataIds}
+                updateCartDataIds={updateCartDataIds}
                 updateObjectList={updateObjectList}
                 cartObjectsState={cartObjectsState}
                 data={data}

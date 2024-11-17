@@ -5,18 +5,26 @@ import { DataContext } from "../../App";
 import bannerImage from "../../assets/banner.jpg";
 import deleteLogo from "../../assets/delete.png";
 import { saveCartData } from "../../utlitlies/localStorageDB";
-const CartProduct = ({ data, updateObjectList, cartObjectsState }) => {
+const CartProduct = ({
+  data,
+  updateObjectList,
+  cartObjectsState,
+  cartDataIds,
+  updateCartDataIds,
+}) => {
   const { products, cart, updateCart } = useContext(DataContext);
 
   const currentProduct = data;
 
   const handleRemove = () => {
-    const newData = cart.filter((cur) => cur !== data.product_id);
+    const newData = cartDataIds.filter((cur) => cur !== data.product_id);
     saveCartData(newData);
-    updateCart(newData);
-    updateObjectList(
-      cartObjectsState.filter((cur) => cur.product_id !== data.product_id)
-    );
+    //  updateCart(newData);
+    // updateObjectList(
+    //   cartObjectsState.filter((cur) => cur.product_id !== data.product_id)
+    // );
+
+    updateCartDataIds(cartDataIds.filter((cur) => cur !== data.product_id));
 
     toast.success("Item is removed!");
   };

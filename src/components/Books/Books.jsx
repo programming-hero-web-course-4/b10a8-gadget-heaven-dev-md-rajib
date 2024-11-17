@@ -92,7 +92,11 @@ const Books = ({ products, updateProducts }) => {
         <div className="col-span-3 grid grid-cols-3 gap-6 auto-rows-max">
           {products.length ? (
             products.map((product) => {
-              return <Book product={product}></Book>;
+              return (
+                <Book
+                  key={product.product_id + "item"}
+                  product={product}></Book>
+              );
             })
           ) : (
             <div className="flex justify-center col-span-3">
