@@ -4,12 +4,13 @@ import { useContext } from "react";
 import { toast } from "react-toastify";
 import { DataContext } from "../../App";
 import sortLogo from "../../assets/sort.png";
+import { getAllData } from "../../utlitlies/dataRetrieve";
 import { retrieveCartData, saveCartData } from "../../utlitlies/localStorageDB";
 import Blank from "../Blank/Blank";
 import CartProduct from "../CartProduct/CartProduct";
 import Modal from "../Modal/Modal";
 const CartProducts = ({ cartDataIds, updateCartDataIds }) => {
-  const { products, wishList, updateWishList, updateCart } =
+  const { products, wishList, updateWishList, updateCart, updateProducts } =
     useContext(DataContext);
 
   const [cartObjectsState, updateObjectList] = useState([]);
@@ -21,7 +22,15 @@ const CartProducts = ({ cartDataIds, updateCartDataIds }) => {
     updateObjectList(curCart);
   }, []);
 
+  useEffect(() => {
+    // getAllData(updateProducts);
+
+    getAllData(updateProducts);
+  }, []);
+
   console.log("Cart ids:", cartDataIds);
+  console.log("cart obs:", cartObjectsState);
+  console.log("cur pro:", products);
 
   useEffect(() => {
     const updatedCartObjects = products.filter((cur) =>
