@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes scale-animation {
+  0% {
+    transform: scale(0.5);
+  }
+
+  12% {
+    transform: scale(0.62);
+  }
+
+  25% {
+    transform: scale(0.75);
+  }
+
+  38% {
+    transform: scale(0.88);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  62% {
+    transform: scale(0.88);
+  }
+
+  75% {
+    transform: scale(0.75);
+  }
+
+  87% {
+    transform: scale(0.62);
+  }
+
+  100% {
+    transform: scale(0.5);
+  }
+}

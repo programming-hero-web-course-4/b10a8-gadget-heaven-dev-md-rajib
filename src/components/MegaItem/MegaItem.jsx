@@ -11,10 +11,10 @@ const MegaItem = ({ product }) => {
   };
   return (
     <div className="card card-compact bg-yellow-300 p-5 gap-5">
-      <figure>
+      <figure className="h-[205px]">
         <img
-          className="rounded-xl"
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          className="rounded-xl w-full h-full object-cover"
+          src={product_image}
           alt="Shoes"
         />
       </figure>

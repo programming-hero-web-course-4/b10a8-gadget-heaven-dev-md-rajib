@@ -12,6 +12,12 @@ import Books from "../Books/Books";
 
 const Home = ({}) => {
   const { products, updateProducts } = useContext(DataContext);
+
+  useEffect(() => {
+    fetch("/productData.json")
+      .then((res) => res.json())
+      .then((data) => updateProducts(data));
+  }, []);
   return (
     <div className="w-[90%] mx-auto">
       <Helmet>

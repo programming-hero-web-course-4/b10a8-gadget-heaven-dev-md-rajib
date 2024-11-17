@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const Book = ({ product }) => {
   const { product_id, product_title, price, product_image } = product;
   return (
-    <div className="card card-compact bg-base-100 p-5 gap-5">
-      <figure>
+    <div className="card  card-compact bg-base-100 p-5 gap-5">
+      <figure className=" h-[205px]">
         <img
-          className="rounded-xl"
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          className="rounded-xl w-full h-full object-cover"
+          src={product_image}
           alt="Shoes"
         />
       </figure>

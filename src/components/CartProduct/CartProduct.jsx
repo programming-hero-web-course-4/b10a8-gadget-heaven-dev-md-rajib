@@ -21,9 +21,13 @@ const CartProduct = ({ data, updateObjectList, cartObjectsState }) => {
     toast.success("Item is removed!");
   };
   return (
-    <div className="p-8 flex gap-8 bg-white rounded-2xl items-center relative">
+    <div className="p-4 flex gap-8 bg-white rounded-2xl items-center relative">
       <div className="w-[200px] h-[124px]">
-        <img className="w-full h-full rounded-xl" src={bannerImage} alt="" />
+        <img
+          className="w-full h-full rounded-xl"
+          src={currentProduct.product_image}
+          alt=""
+        />
       </div>
 
       <div>

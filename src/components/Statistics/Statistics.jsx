@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useContext } from "react";
 import { Helmet } from "react-helmet";
 import {
@@ -16,7 +16,13 @@ import {
 import { DataContext } from "../../App";
 
 const Statistics = () => {
-  const { products } = useContext(DataContext);
+  const { products, updateProducts } = useContext(DataContext);
+  useEffect(() => {
+    fetch("/productData.json")
+      .then((res) => res.json())
+      .then((data) => updateProducts(data));
+  }, []);
+
   return (
     <div className="w-[90%] mx-auto">
       <div className="bg-[#9538E2] py-8">

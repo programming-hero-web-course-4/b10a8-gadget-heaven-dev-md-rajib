@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Helmet } from "react-helmet";
 import { Outlet, useNavigate } from "react-router-dom";
 import { DataContext } from "../../App";
 import MegaItem from "../MegaItem/MegaItem";
@@ -15,6 +16,11 @@ const MegaSale = () => {
 
   return (
     <div className="w-[90%] mx-auto">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Gadget Heaven | MegaSale</title>
+      </Helmet>
+
       <div className="bg-[#9538E2] px-2 pb-6 pt-8">
         <h1 className="text-3xl text-white font-bold text-center">
           Mega Sale{" "}

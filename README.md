@@ -34,14 +34,14 @@
 
 ## Data Handling and Managing
 
-- Hooks ( fetch, useState, useParams, useLocation)
+- Hooks (useState,useEffect, useParams, useLocation, useNavigation)
 - LocalStorage for Cart and Wishlist data
 - ContextApi to ignore props drilling
 
 ## Top features
 
-- Eyecatching UI
+- Eye-catching UI
 - Smooth Experience
 - Single page handling
-- Superfast performance
+- Super-fast performance
 - Highly secured

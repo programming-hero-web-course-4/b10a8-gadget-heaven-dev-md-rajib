@@ -47,9 +47,13 @@ const WishlistProduct = ({ current }) => {
     }
   };
   return (
-    <div className="p-8 flex gap-8 bg-white rounded-2xl items-center relative">
-      <div className="w-[200px] h-[200px]">
-        <img className="w-full h-full rounded-xl" src={bannerImage} alt="" />
+    <div className="p-6 flex gap-8 bg-white rounded-2xl items-center relative">
+      <div className="w-[260px] h-[200px]">
+        <img
+          className="w-full h-full object-cover rounded-xl"
+          src={currentProduct.product_image}
+          alt=""
+        />
       </div>
 
       <div className="  h-full">

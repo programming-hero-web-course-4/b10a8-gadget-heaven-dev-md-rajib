@@ -21,7 +21,7 @@ const Banner = () => {
           </p>
 
           <div onClick={handleClick} className="flex justify-center">
-            <button className="box-border mt-8 rounded-3xl bg-white w-[168px] h-[56px] text-[#9538E2] text-[20px] font-bold mb-8">
+            <button className="box-border mt-8 rounded-3xl bg-white w-[168px] h-[56px] text-[#9538E2] hover:bg-[#9538E2] hover:text-white hover:border-white hover:border text-[20px] font-bold mb-8">
               Shop Now
             </button>
           </div>

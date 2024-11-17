@@ -91,9 +91,9 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex  items-center">
+        <div className="navbar-center  hidden lg:flex  items-center">
           <ul
-            className={`menu menu-horizontal px-1 flex gap-6 font-medium ${
+            className={`menu menu-horizontal items-center px-1 flex gap-6 font-medium ${
               isHome() ? "text-white" : "text-[#0B0B0BB3]"
             }`}>
             <NavLink
@@ -114,11 +114,18 @@ const Navbar = () => {
 
             <NavLink
               className={({ isActive }) =>
-                isActive ? " relative " : "relative"
+                isActive
+                  ? " relative h-[70px] w-[70px] mt-[-0px] rounded-xl bg-yellow-300"
+                  : "relative h-[70px] w-[70px] mt-[-0px]"
               }
               to="/mega-sale">
-              <div className="w-[75px] absolute top-[-30px] left-[-5px] -rotate-12 hover:bg-yellow-200 rounded-full">
+              <div
+                style={{
+                  animation: "scale-animation 2s infinite",
+                }}
+                className="w-[70px] flex flex-col gap-1 absolute top-[-12px] left-[0px] -rotate-12 hover:bg-yellow-300 rounded-xl">
                 <img className="w-full h-full " src={saleImage} alt="" />
+                <p className="text-red-400">Tap on Me</p>
               </div>
             </NavLink>
           </ul>

@@ -2,7 +2,7 @@
   {
     "product_id": "LAP001",
     "product_title": "Dell XPS 13",
-    "product_image": "https://example.com/images/dell-xps13.jpg",
+    "product_image": "https://i.postimg.cc/y6cY6Z7D/Screenshot-2024-11-17-153247.png",
     "category": "laptops",
     "price": 999.99,
     "prev_price": 1099.99,
@@ -19,7 +19,7 @@
   {
     "product_id": "LAP002",
     "product_title": "HP Spectre x360",
-    "product_image": "https://example.com/images/hp-spectre-x360.jpg",
+    "product_image": "https://i.postimg.cc/TY1YXHNc/Screenshot-2024-11-17-151234.png",
     "category": "laptops",
     "price": 1199.99,
     "description": "A premium 2-in-1 laptop with sleek design and versatile features.",
@@ -35,7 +35,7 @@
   {
     "product_id": "PHN001",
     "product_title": "Samsung Galaxy S23",
-    "product_image": "https://example.com/images/galaxy-s23.jpg",
+    "product_image": "https://i.postimg.cc/GtGpZBms/Screenshot-2024-11-17-152914.png",
     "category": "phones",
     "price": 799.99,
     "prev_price": 1099.99,
@@ -52,7 +52,7 @@
   {
     "product_id": "PHN002",
     "product_title": "Google Pixel 7",
-    "product_image": "https://example.com/images/pixel-7.jpg",
+    "product_image": "https://i.postimg.cc/3JjR1Dqs/Screenshot-2024-11-17-153035.png",
     "category": "phones",
     "price": 599.99,
     "description": "A reliable smartphone with excellent photo quality and stock Android experience.",
@@ -68,7 +68,7 @@
   {
     "product_id": "ACC001",
     "product_title": "Logitech MX Master 3",
-    "product_image": "https://example.com/images/mx-master-3.jpg",
+    "product_image": "https://i.postimg.cc/vmKHT71V/Screenshot-2024-11-17-153133.png",
     "category": "accessories",
     "price": 99.99,
     "description": "A high-performance ergonomic mouse with customizable buttons and great battery life.",
@@ -83,7 +83,7 @@
   {
     "product_id": "ACC002",
     "product_title": "Razer BlackWidow V3",
-    "product_image": "https://example.com/images/blackwidow-v3.jpg",
+    "product_image": "https://i.postimg.cc/wTnt4pxN/Screenshot-2024-11-17-151756.png",
     "category": "accessories",
     "price": 129.99,
     "prev_price": 359.99,
@@ -99,7 +99,7 @@
   {
     "product_id": "SMW001",
     "product_title": "Apple Watch Series 8",
-    "product_image": "https://example.com/images/apple-watch-series8.jpg",
+    "product_image": "https://i.postimg.cc/tgjsyNxC/Screenshot-2024-11-17-151851.png",
     "category": "smart-watches",
     "price": 399.99,
     "description": "A premium smartwatch with advanced health tracking and seamless Apple ecosystem integration.",
@@ -114,7 +114,7 @@
   {
     "product_id": "SMW002",
     "product_title": "Samsung Watch 6",
-    "product_image": "https://example.com/images/galaxy-watch-6.jpg",
+    "product_image": "https://i.postimg.cc/LX4hg4Dc/Screenshot-2024-11-17-151959.png",
     "category": "smart-watches",
     "price": 349.99,
     "prev_price": 409.99,
@@ -130,7 +130,7 @@
   {
     "product_id": "MAC001",
     "product_title": "MacBook Pro 14-inch",
-    "product_image": "https://example.com/images/macbook-pro-14.jpg",
+    "product_image": "https://i.postimg.cc/44Snng90/Screenshot-2024-11-17-152104.png",
     "category": "macbook",
     "price": 1999.99,
     "prev_price": 2399.99,
@@ -147,7 +147,7 @@
   {
     "product_id": "MAC002",
     "product_title": "MacBook Air M2",
-    "product_image": "https://example.com/images/macbook-air-m2.jpg",
+    "product_image": "https://i.postimg.cc/7Zv6MnXM/Screenshot-2024-11-17-152156.png",
     "category": "macbook",
     "price": 1199.99,
     "description": "A lightweight MacBook with the efficient M2 chip for everyday use.",
@@ -163,7 +163,7 @@
   {
     "product_id": "IPH001",
     "product_title": "iPhone 14 Pro",
-    "product_image": "https://example.com/images/iphone-14-pro.jpg",
+    "product_image": "https://i.postimg.cc/nzwVs4Cm/Screenshot-2024-11-17-152259.png",
     "category": "iphone",
     "price": 933.99,
     "description": "Apple's latest flagship smartphone with an innovative Dynamic Island and Pro camera system.",
@@ -179,7 +179,7 @@
   {
     "product_id": "IPH002",
     "product_title": "iPhone 13 Mini",
-    "product_image": "https://example.com/images/iphone-13-mini.jpg",
+    "product_image": "https://i.postimg.cc/Y0GrQvWs/Screenshot-2024-11-17-152416.png",
     "category": "iphone",
     "price": 699.99,
     "prev_price": 850.99,
@@ -197,7 +197,7 @@
   {
     "product_id": "LAP004",
     "product_title": "Apple MacBook Air M2",
-    "product_image": "https://example.com/images/macbook-air-m2.jpg",
+    "product_image": "https://i.postimg.cc/8zVprPPZ/Screenshot-2024-11-17-152520.png",
     "category": "laptops",
     "price": 1119.99,
     "description": "A lightweight and efficient laptop with Apple's M2 chip for exceptional performance.",
@@ -213,7 +213,7 @@
   {
     "product_id": "LAP005",
     "product_title": "Lenovo ThinkPad X1 ",
-    "product_image": "https://example.com/images/thinkpad-x1-carbon.jpg",
+    "product_image": "https://i.postimg.cc/QCTDHRLL/Screenshot-2024-11-17-152613.png",
     "category": "laptops",
     "price": 1345.99,
     "prev_price": 1779.99,
@@ -230,7 +230,7 @@
   {
     "product_id": "LAP006",
     "product_title": "ROG Zephyrus G14",
-    "product_image": "https://example.com/images/rog-zephyrus-g14.jpg",
+    "product_image": "https://i.postimg.cc/rwJDVtC1/Screenshot-2024-11-17-152731.png",
     "category": "laptops",
     "price": 1599.99,
     "description": "A powerful gaming laptop with exceptional portability and advanced cooling system.",
@@ -246,7 +246,7 @@
   {
     "product_id": "LAP007",
     "product_title": "Microsoft Surface  ",
-    "product_image": "https://example.com/images/surface-laptop-studio.jpg",
+    "product_image": "https://i.postimg.cc/qRtqxDfw/Screenshot-2024-11-17-152821.png",
     "category": "laptops",
     "price": 1799.99,
     "prev_price": 1970.99,
